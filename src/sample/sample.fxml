@@ -9,5 +9,5 @@
       <TextArea fx:id="codFld" layoutX="14.0" layoutY="10.0" prefHeight="530.0" prefWidth="347.0" text="Enter Your Code Here..." />
       <Button fx:id="CalcBtn" layoutX="370.0" layoutY="10.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" text="Calculate" />
       <Button fx:id="ParseBtn" layoutX="370.0" layoutY="46.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" text="Parse" />
-      <Label fx:id="outputLbl" layoutX="370.0" layoutY="154.0" prefHeight="386.0" prefWidth="522.0" style="-fx-background-color: #ffffff;" />
+      <Label fx:id="outputLbl" layoutX="370.0" layoutY="148.0" prefHeight="391.0" prefWidth="619.0" style="-fx-background-color: #ffffff;" />
 </AnchorPane>
