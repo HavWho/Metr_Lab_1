@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: #39536e;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+      <TextArea fx:id="codFld" layoutX="14.0" layoutY="10.0" prefHeight="530.0" prefWidth="347.0" text="Enter Your Code Here..." />
+      <Button fx:id="CalcBtn" layoutX="370.0" layoutY="10.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" text="Calculate" />
+      <Button fx:id="ParseBtn" layoutX="370.0" layoutY="46.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" text="Parse" />
+      <Label fx:id="outputLbl" layoutX="370.0" layoutY="154.0" prefHeight="386.0" prefWidth="522.0" style="-fx-background-color: #ffffff;" />
+</AnchorPane>
