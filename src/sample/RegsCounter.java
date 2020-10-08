@@ -20,6 +20,7 @@ public class RegsCounter {
             Pattern pattern = Pattern.compile(regsArray[i]);
             Matcher matcher =  pattern.matcher(str);
             arrayCounter[i] = 0;
+
             while (matcher.find()){
                 arrayCounter[i]++;
             }
