@@ -1,11 +1,16 @@
 package sample;
 
+//import java.awt.event.MouseEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javafx.event.Event;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.MouseEvent;
 
 public class Controller {
 
@@ -33,5 +38,12 @@ public class Controller {
         assert CalcBtn != null : "fx:id=\"CalcBtn\" was not injected: check your FXML file 'sample.fxml'.";
         assert ParseBtn != null : "fx:id=\"ParseBtn\" was not injected: check your FXML file 'sample.fxml'.";
         assert outputLbl != null : "fx:id=\"outputLbl\" was not injected: check your FXML file 'sample.fxml'.";
+
+        ParseBtn.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                codFld.setText("Hui");
+            }
+        });
     }
 }
