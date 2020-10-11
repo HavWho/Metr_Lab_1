@@ -1,7 +1,6 @@
 package sample;
 
 import java.net.URL;
-import java.util.Date;
 import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
