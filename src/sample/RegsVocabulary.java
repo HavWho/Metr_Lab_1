@@ -58,7 +58,7 @@ public class RegsVocabulary {
 
     final String regBreak = "\\b(break)";
     final String regNext = "\\b(next)";
-    final String regRedo = "\\b(continue)";
+    final String regRedo = "\\b(redo)";
     final String regRetry = "\\b(retry)";
 
     final String regCase = "\\b(case)";
@@ -71,7 +71,6 @@ public class RegsVocabulary {
     final String regDef = "\\b(def)";
 
     final String regQuotes = "\"";
-    final String regSemicolon = "\\;";
 
     String[] arrRegex = {regDef, regIf, regEach,
             regPuts, regCase, regRetry, regRedo, regNext, regBreak,
@@ -83,7 +82,7 @@ public class RegsVocabulary {
             regAddAnd, regAssigment, regIsOneObject, regIsEql, regIsEqualWhenCase,
             regIsCombinedEqual, regIsLessOrEqual, regIsMoreOrEqual, regIsLess,
             regIsMore, regIsNotEqual, regIsEqual, regExp, regMod, regDiv,
-            regMinus, regMultiply, regPlus, regValueDec, regValueInc, regSemicolon};
+            regMinus, regMultiply, regPlus};
 
     String[] arrNames = {"try..catch", "if..else", "do..while", "",
             "switch..case..default", "", "", "", "", "", "", "",

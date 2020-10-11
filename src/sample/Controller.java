@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import java.util.Arrays;
 
 public class Controller {
 
@@ -30,15 +31,37 @@ public class Controller {
     @FXML
     private Label outputLbl;
 
+    String code;
+    RegsVocabulary regsVocabulary = new RegsVocabulary();
+    RegsCounter regsCounter = new RegsCounter();
+
     @FXML
     void initialize() {
-
         ParseBtn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                outputLbl.setText("mocha");
+                code = codeFld.getText();
+                if (code == null) {
+                    setOutputLabel("Code is null");
+                }
             }
         });
+        CalcBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                String[] regsArray = regsVocabulary.arrRegex;
+                int numberOfRegs = regsCounter.counter(regsArray, code);
+                outputAnswer(numberOfRegs);
+//                setOutputLabel(numberOfRegs);
+            }
+        });
+    }
 
+    void setOutputLabel(String str) {
+        outputLbl.setText(str);
+    }
+
+    void outputAnswer(int answer) {
+        outputLbl.setText("The number of regex is: " + String.valueOf(answer));
     }
 }

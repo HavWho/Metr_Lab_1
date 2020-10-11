@@ -7,7 +7,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-    private static String codeStr = new String();
 
     @Override
     public void start(Stage primaryStage) throws Exception{
