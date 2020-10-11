@@ -82,7 +82,7 @@ public class RegsVocabulary {
             regAddAnd, regAssigment, regIsOneObject, regIsEql, regIsEqualWhenCase,
             regIsCombinedEqual, regIsLessOrEqual, regIsMoreOrEqual, regIsLess,
             regIsMore, regIsNotEqual, regIsEqual, regExp, regMod, regDiv,
-            regMinus, regMultiply, regPlus};
+            regMinus, regMultiply, regPlus, regValueDec, regValueInc};
 
     String[] arrNames = {"try..catch", "if..else", "do..while", "",
             "switch..case..default", "", "", "", "", "", "", "",
