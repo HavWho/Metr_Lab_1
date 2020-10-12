@@ -18,12 +18,10 @@ public class RegsVocabulary {
     final String regIsEql = "\\(.eql?\\)";
     final String regIsOneObject = "\\(equal?\\)";
 
-    final String regAssigment = "\\[^=]=[^=]";
+    final String regAssigment = "\\[[^=],=,[^=]]";
     final String regAddAnd = "\\(+=\\)";
     final String regSubAnd = "\\(-=\\)";
     final String regMulAnd = "\\(*=\\)";
-    final String regValueDec = "\\(--\\)";
-    final String regValueInc = "\\(++\\)";
     final String regDivAnd = "\\(/=\\)";
     final String regModAnd = "\\(%=\\)";
     final String regExpAnd = "\\(\\*\\*=\\)";
@@ -71,6 +69,9 @@ public class RegsVocabulary {
     final String regDef = "\\b(def)";
 
     final String regQuotes = "\"";
+    final String regLeftBrace = "\\{";
+    final String regRightBrace = "\\}";
+    final String regSemicolon = "[\\;]";
 
     String[] arrRegex = {regDef, regIf, regEach,
             regPuts, regCase, regRetry, regRedo, regNext, regBreak,
@@ -82,7 +83,8 @@ public class RegsVocabulary {
             regAddAnd, regAssigment, regIsOneObject, regIsEql, regIsEqualWhenCase,
             regIsCombinedEqual, regIsLessOrEqual, regIsMoreOrEqual, regIsLess,
             regIsMore, regIsNotEqual, regIsEqual, regExp, regMod, regDiv,
-            regMinus, regMultiply, regPlus, regValueDec, regValueInc};
+            regMinus, regMultiply, regPlus, regLeftBrace, regRightBrace,
+            regSemicolon};
 
     String[] arrNames = {"try..catch", "if..else", "do..while", "",
             "switch..case..default", "", "", "", "", "", "", "",
