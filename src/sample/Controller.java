@@ -62,6 +62,6 @@ public class Controller {
     }
 
     void outputAnswer(int answer) {
-        outputLbl.setText("The number of regex is: " + String.valueOf(answer));
+        outputLbl.setText("The number of operators is: " + String.valueOf(answer));
     }
 }

@@ -9,8 +9,8 @@ public class RegsVocabulary {
     final String regExp = "\\(\\*\\*\\)";
     final String regIsEqual = "\\[^=]\\(==\\)[^=]";
     final String regIsNotEqual = "\\(!=\\)";
-    final String regIsMore = "\\[^=?]>[^=>]";
-    final String regIsLess = "\\[^=<]>[^=<]";
+    final String regIsMore = "([^=>]\\>[^=>])";
+    final String regIsLess = "([^=<]\\<[^=<])";
     final String regIsMoreOrEqual = "\\(>=\\)";
     final String regIsLessOrEqual = "\\(<=\\)";
     final String regIsCombinedEqual = "\\(<=>\\)";
@@ -18,7 +18,7 @@ public class RegsVocabulary {
     final String regIsEql = "\\(.eql?\\)";
     final String regIsOneObject = "\\(equal?\\)";
 
-    final String regAssigment = "\\[[^=],=,[^=]]";
+    final String regAssigment = "[\\=]";
     final String regAddAnd = "\\(+=\\)";
     final String regSubAnd = "\\(-=\\)";
     final String regMulAnd = "\\(*=\\)";
@@ -30,8 +30,6 @@ public class RegsVocabulary {
     final String regOr = "[^|](\\|)[^|]";
     final String regXor = "\\^";
     final String regBO = "\\~";
-    final String reg2TurnLeft = "\\(>>\\)";
-    final String reg2TurnRight = "\\(<<\\)";
 
     final String regLogAnd = "\\b(and)\\b";
     final String regLogOR = "\\b(or)\\b";
@@ -56,7 +54,6 @@ public class RegsVocabulary {
 
     final String regBreak = "\\b(break)";
     final String regNext = "\\b(next)";
-    final String regRedo = "\\b(redo)";
     final String regRetry = "\\b(retry)";
 
     final String regCase = "\\b(case)";
@@ -74,11 +71,11 @@ public class RegsVocabulary {
     final String regSemicolon = "[\\;]";
 
     String[] arrRegex = {regDef, regIf, regEach,
-            regPuts, regCase, regRetry, regRedo, regNext, regBreak,
+            regPuts, regCase, regRetry, regNext, regBreak,
             regUntil, regFor, regWhile, regLRightBracket, regLeftBracket,
             regDoubleColon, regDot, regDefined, regDiap3, regDiap2,
             regLogNotNot, regLogNot, regLogOr, regLogAndAnd, regLogOR,
-            regLogAnd, reg2TurnRight, reg2TurnLeft, regBO, regXor, regOr,
+            regLogAnd, regBO, regXor, regOr,
             regAnd, regExpAnd, regModAnd, regDivAnd, regMulAnd, regSubAnd,
             regAddAnd, regAssigment, regIsOneObject, regIsEql, regIsEqualWhenCase,
             regIsCombinedEqual, regIsLessOrEqual, regIsMoreOrEqual, regIsLess,
