@@ -45,7 +45,6 @@ public class RegsVocabulary {
     final String regDot = "\\[^\\.]\\.[^\\.]";
     final String regDoubleColon = "\\S\\(::\\)";
 
-    final String regLeftBracket = "\\)";
     final String regLRightBracket = "\\(";
 
     final String regWhile = "\\b(while)";
@@ -65,14 +64,12 @@ public class RegsVocabulary {
     final String regIf = "\\b(if)";
     final String regDef = "\\b(def)";
 
-    final String regQuotes = "\"";
     final String regLeftBrace = "\\{";
-    final String regRightBrace = "\\}";
     final String regSemicolon = "[\\;]";
 
     String[] arrRegex = {regDef, regIf, regEach,
             regPuts, regCase, regRetry, regNext, regBreak,
-            regUntil, regFor, regWhile, regLRightBracket, regLeftBracket,
+            regUntil, regFor, regWhile, regLRightBracket,
             regDoubleColon, regDot, regDefined, regDiap3, regDiap2,
             regLogNotNot, regLogNot, regLogOr, regLogAndAnd, regLogOR,
             regLogAnd, regBO, regXor, regOr,
@@ -80,7 +77,7 @@ public class RegsVocabulary {
             regAddAnd, regAssigment, regIsOneObject, regIsEql, regIsEqualWhenCase,
             regIsCombinedEqual, regIsLessOrEqual, regIsMoreOrEqual, regIsLess,
             regIsMore, regIsNotEqual, regIsEqual, regExp, regMod, regDiv,
-            regMinus, regMultiply, regPlus, regLeftBrace, regRightBrace,
+            regMinus, regMultiply, regPlus, regLeftBrace,
             regSemicolon};
 
     String[] arrNames = {"try..catch", "if..else", "do..while", "",
