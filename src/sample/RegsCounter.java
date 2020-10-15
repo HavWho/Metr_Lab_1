@@ -5,10 +5,11 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
 public class RegsCounter {
-    String[] regsArray;
     int[] arrayCounter = {};
-    String str;
     int numberOfRegex;
+    String[] regsArray;
+    String str;
+    String[] outRegs = new String[30];
 
     public int counter(String[] regsArray, String str){
         this.regsArray = regsArray;
@@ -16,6 +17,8 @@ public class RegsCounter {
 
         numberOfRegex = 0;
 
+        int positionCounter = 0;
+        int regsCounter = 0;
         for (int i = 0; i < regsArray.length; i++) {
             arrayCounter = Arrays.copyOf(arrayCounter, arrayCounter.length + 1);
             Pattern pattern = Pattern.compile(regsArray[i]);
@@ -24,9 +27,20 @@ public class RegsCounter {
 
             while (matcher.find()){
                 arrayCounter[i]++;
-                System.out.println(regsArray[i]);
+                for (int j = 0; j < outRegs.length; j++) {
+                    if (regsArray[i] == outRegs[j]) {
+                        regsCounter++;
+                    }
+                }
+                if (regsCounter == 0) {
+                    outRegs[positionCounter] = regsArray[i];
+                    System.out.println("Оператор " + outRegs[positionCounter]);
+                    positionCounter++;
+                }
+                regsCounter = 0;
             }
         }
+        System.out.println("\n");
 
         for (int i = 0; i < arrayCounter.length; i++) {
             numberOfRegex += arrayCounter[i];

@@ -7,7 +7,7 @@ public class RegsVocabulary {
     final String regDiv = "\\%[^=]";
     final String regMod = "\\/[^=]";
     final String regExp = "\\(\\*\\*\\)";
-    final String regIsEqual = "\\[^=]\\(==\\)[^=]";
+    final String regIsEqual = "\\(==\\)";
     final String regIsNotEqual = "\\(!=\\)";
     final String regIsMore = "([^=>]\\>[^=>])";
     final String regIsLess = "([^=<]\\<[^=<])";
@@ -55,6 +55,7 @@ public class RegsVocabulary {
     final String regNext = "\\b(next)";
     final String regRetry = "\\b(retry)";
 
+    final String regSwitch = "\\b(switch)";
     final String regCase = "\\b(case)";
 
     final String regPuts = "\\b(puts)";
@@ -78,7 +79,7 @@ public class RegsVocabulary {
             regIsCombinedEqual, regIsLessOrEqual, regIsMoreOrEqual, regIsLess,
             regIsMore, regIsNotEqual, regIsEqual, regExp, regMod, regDiv,
             regMinus, regMultiply, regPlus, regLeftBrace,
-            regSemicolon};
+            regSemicolon, regSwitch};
 
     String[] arrNames = {"try..catch", "if..else", "do..while", "",
             "switch..case..default", "", "", "", "", "", "", "",

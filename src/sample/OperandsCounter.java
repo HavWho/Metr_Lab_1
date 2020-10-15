@@ -5,11 +5,8 @@ import java.util.HashSet;
 public class OperandsCounter {
     String str;
 
-    public OperandsCounter(String str){
+    public String[] globalVarCounter(String str){
         this.str = str;
-    }
-
-    public String[] globalVarCounter(){
         String currVar = "";
         String[] arrGlobalVar = {};
         int k = 0;
@@ -29,7 +26,8 @@ public class OperandsCounter {
         return arrGlobalVar;
     }
 
-    public String[] exempVarCounter(){
+    public String[] exempVarCounter(String str){
+        this.str = str;
         String currVar = "";
         String[] arrExempVar = {};
         int k = 0;
@@ -49,7 +47,8 @@ public class OperandsCounter {
         return arrExempVar;
     }
 
-    public String[] classVarCounter(){
+    public String[] classVarCounter(String str){
+        this.str = str;
         String currVar = "";
         String[] arrClassVar = {};
         int k = 0;
