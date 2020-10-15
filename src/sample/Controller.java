@@ -51,6 +51,7 @@ public class Controller {
                 String[] regsArray = regsVocabulary.arrRegex;
                 int numberOfRegs = regsCounter.counter(regsArray, code);
                 outputAnswer(numberOfRegs);
+//                setOutputLabel(numberOfRegs);
             }
         });
     }
@@ -62,6 +63,4 @@ public class Controller {
     void outputAnswer(int answer) {
         outputLbl.setText("The number of operators is: " + String.valueOf(answer));
     }
-
-
 }

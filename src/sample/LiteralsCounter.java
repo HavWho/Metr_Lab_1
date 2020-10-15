@@ -5,11 +5,8 @@ import java.util.HashSet;
 public class LiteralsCounter {
     String str;
 
-    public LiteralsCounter(String str){
+    public String[] literalVarCounter(String str){
         this.str = str;
-    }
-
-    public String[] literalVarCounter(){
         String currVar = "";
         String[] arrLiteralVar = {};
         int k = 0;
