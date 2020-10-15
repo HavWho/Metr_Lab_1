@@ -12,7 +12,7 @@ public class LiteralsCounter {
         int k = 0;
         for (int i = 0; i < str.length() - 1; i++) {
             if (Character.isDigit(str.charAt(i))){
-                while (str.charAt(i) != '$' && str.charAt(i) != '=' && str.charAt(i) != '@' && Character.isDigit(str.charAt(i))){
+                while ((str.equals("int") || str.equals("float") && str.equals("string") || str.equals("char") || str.equals("bool") || str.equals("byte")) && Character.isDigit(str.charAt(i))){
                     currVar += str.charAt(i);
                     i++;
                 }
